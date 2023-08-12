@@ -1,0 +1,297 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil\fcharset1 Cambria Math;}{\f2\fnil\fcharset0 Cambria Math;}}
+{\*\generator Riched20 10.0.19041}{\*\mmathPr\mmathFont1\mwrapIndent1440 }\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs22\lang9\par
+\par
+\par
+1) explain variables. \par
+ans : A variable is a quantity that may be changed according to the mathematical problem. The generic letters which are used in many algebraic expressions and equations are x, y, z. In other words, a variable is a symbol for a number where the value is not known. For example, x + 5 = 10. Here \ldblquote x\rdblquote  is a variable.\par
+\par
+-> The value of the variable \ldblquote x\rdblquote  can be easily found by solving the equation. In this case, if the equation is solved, the value of the variable \ldblquote x\rdblquote  is obtained as 5. It means that x = 5.\par
+\par
+-> Types of Variables:-\par
+\par
+      1. let \par
+      2. var\par
+      3. const\par
+\par
+  1. let  :- only redeclaration\par
+      example: let nymber = 50\par
+                  console.log(number);   // 50\par
+\tab\tab number = 100\par
+\tab\tab   console.log(number);    // 100\par
+\par
+  2. var :-  redeclaration ane reassessment are both \par
+       example :- var samosa = 12\par
+\tab        var kachori = 15\par
+\tab        var khaman = 20\par
+\tab\tab    console.log(samosa); \par
+\par
+  3. const :-  only reassessment\par
+\tab example :- const number = 10\par
+\tab               console.log(number);    //  cannot access number  //  block scope\par
+\par
+\par
+2) what are the different data type present in a js?\par
+ans: 1. number\par
+     2. null\par
+     3. bigInt\par
+     4. boolean\par
+     5. string\par
+     6. symbol\par
+     7. undefined\par
+\par
+   1. number :- let length = 16;\par
+                let weight = 7.5;\par
+\par
+   2. null :- const number = null;\par
+\par
+   3. bigInt :- const x = 5;\par
+               const y = "hello";\par
+   \par
+   4. boolean :- const datachecked = true;\par
+  \tab\tab  const valuecounted = false;\par
+\par
+   5. string :- const name = 'ram';\par
+\tab\tab const name1 = "hari";\par
+  \tab\tab const result = 'the names are $\{name\} and $\{name1\}';\par
+\par
+   6. symbol :- const value1 = symbol('hello');\par
+\tab\tab const value2 = symbol('hello');\par
+\par
+   7. undefined :- let name;\par
+\tab\tab\tab console.log(name);   // undefined\par
+\tab\tab\par
+\par
+3) explain hoisting.\par
+ans : Hoisting is JavaScript's default behavior of moving all declarations to the top of the current scope (to the top of the current script or the current function).\par
+\par
+\tab x = 5; // Assign 5 to x\par
+\par
+\tab elem = document.getElementById("demo"); // Find an element\par
+\tab elem.innerHTML = x;                     // Display x in the element\par
+\par
+\tab var x; // Declare x\par
+\par
+   ->  Hoisting is a concept or behavior in JavaScript where the declaration of a function, variable, or class goes to the top of the scope they were defined in.\par
+   -> use : allows you to use functions and variables before they are declared.\par
+   -> why : hoisted finctions can be used before their declration.\par
+   -> where : anywhere lifting and moving a load is required\par
+\par
+\par
+4) difference between double question mark or triple question mark.\par
+ans : Javascript double question mark can simply be explained as a special case of the logical OR ( || ) operator. \par
+    -> If double question marks are used , it is clearly to emphasise something in return, usually from the shock of the previous thing said, to express a strong emotion. \par
+    -> For example, if I said:- 'My dog just died' Someone may reply. 'Really??'\par
+    ->  single question mark is for asking a question; multiple question marks, or multiple question marks along with exclamation points are for expressing confusion.\par
+    -> /using double question mark\par
+$course = isset($params->course_id) ?? NULL; //result that save in db is 0\par
+\par
+//using single question mark\par
+$course = isset($params->course_id) ? $params->course_id : NULL; //result that save in db is NULL\par
+\par
+5) diffrence between == vs === \par
+ans : The == operator performs a loose equality comparison that performs type coercion if necessary to make the comparison possible. The === operator, on the other hand, performs a strict equality comparison that does not perform type coercion and requires the operands to have the same type (as well as the same value).\par
+-> What is == in JavaScript?\par
+Double equals (==) is a comparison operator, which transforms the operands having the same type before comparison.\par
+\par
+So, when you compare string with a number, JavaScript converts any string to a number. An empty string is always converts to zero. A string with no numeric value is converts to NaN (Not a Number), which returns false.\par
+\par
+What is === in JavaScript?\par
+=== (Triple equals) is a strict equality comparison operator in JavaScript, which returns false for the values which are not of a similar type. This operator performs type casting for equality. If we compare 2 with \ldblquote 2\rdblquote  using ===, then it will return a false value.\par
+6) one arithmetic operators\par
+ans : Mathematical Operators (+, -, *, /, ^)\par
+Performs mathematical operations. The precedence for processing mathematical operators is as follows: exponents (^) multiplication (*) and division (/)\par
+ Performs mathematical operations. The precedence for processing mathematical operators is as follows:\par
+exponents (^)\par
+multiplication (*) and division (/)\par
+addition (+) and subtraction (-)\par
+Mathematical operators that are at the same level of precedence are evaluated from left to right. You can use parentheses to override this order of precedence.\par
+The four basic arithmetic operations in Maths, for all real numbers, are:\par
+Addition (Finding the Sum; '+')\par
+Subtraction (Finding the difference; '-')\par
+Multiplication (Finding the product; '\'d7' )\par
+Division (Finding the quotient; '\'f7')\par
+\par
+Addition\tab +\tab Adds one operand to the other\par
+Subtraction\tab -\tab Subtracts the second operand from the first\par
+Multiplication\tab *\tab Multiplies one operand by the other\par
+Division\tab /\tab Divides the first operand by the second\par
+Modulo\tab %\tab Divides the first INTEGER operand by the second, and returns the remainder\par
+7) dynamic example of boolean data type\par
+ans : Boolean is a datatype that returns either of two values i.e. true or false. In JavaScript, Boolean is used as a function to get the value of a variable, object, conditions, expressions, etc. in terms of true or false.\par
+\par
+Note: A variable or object which has a value is treated as a true boolean value. \lquote 0\rquote , \lquote NaN\rquote , empty string, \lquote undefined\rquote , and \lquote null\rquote  is treated as false boolean values. \par
+\par
+Here a1 and a2 store the boolean value i.e. true and false respectively. \par
+\par
+let a1 = true;\par
+let a2 = false;\par
+Note: Below variables are initialized with strings, not boolean values.  \par
+\par
+\par
+let a1 ="true";\par
+let a2 ="false";\par
+Boolean() function in JavaScript: Boolean function returns the boolean value of the variable. It can also be used to find the boolean result of a condition, expression, etc.\par
+\par
+Syntax:  \par
+\par
+Boolean(variable/expression) \par
+JavaScript Boolean object: The boolean object in javascript is an object wrapper for boolean values. Booleans in JavaScript can also be defined using the new keyword. \par
+\par
+Syntax:  \par
+\par
+new Boolean(value)\par
+Below are examples of the JavaScript Boolean method.\par
+\par
+Example 1: Below program will give true values as output.\par
+\par
+\par
+function gfg() \{\par
+    console.log(Boolean(12));\par
+\}\par
+gfg();\par
+Output: \par
+\par
+true\par
+Example 2: Below program will give true values as output.\par
+8) how many key words in js ?  and what work with example.\par
+ans : JavaScript keywords are reserved words, which we cannot use to name the variables or functions. There are total of 63 keywords which JavaSscript provides to the programmers.\par
+-> Keywords\par
+abstract\tab arguments\tab boolean\tab break\par
+byte\tab case\tab catch\tab char\par
+const\tab continue\tab class*\tab debugger\par
+default\tab delete\tab do\tab double\par
+else\tab eval\tab enum*\tab export*\par
+extends*\tab false\tab final\tab finally\par
+float\tab for\tab function\tab goto\par
+->   The three ways to declare variables in JavaScript are by using var , let , and const . All function in slightly different ways. The key differences between the three variable declaration keywords are the way they handle variable reassignment, variable scope, and variable hoisting.\par
+->  There are four kinds of bindings: default binding, implicit binding, explicit binding and constructor call binding (new) Knowing these four rules will help you easily discern the context for a this reference.\par
+9) difference between object and array.\par
+ans :    Array\par
+\par
+Array of objects\par
+\par
+Arrays are best to use when the elements are numbers.\par
+\par
+Objects are best to use when the elements\rquote  strings (text).\par
+\par
+The data inside an array is known as Elements.\par
+\par
+The data inside objects are known as Properties which consists of a key and a value.\par
+\par
+The elements can be manipulated using [].  \par
+\par
+The properties can be manipulated using both.DOT notation and [].\par
+\par
+The elements can be popped out of an array using the pop() function.\par
+\par
+The keys or properties can be deleted by using the delete keyword.\par
+\par
+Iterating through an array is possible using For loop, For..in, For..of, and ForEach().\par
+\par
+Iterating through an array of objects is possible using For..in, For..of, and ForEach().\par
+10) types of function in js.\par
+ans :  JavaScript is a powerful, versatile language that has become an essential part of web development. One of the most important features of JavaScript is its ability to create and use functions\par
+Functions are blocks of reusable code that can be called by other parts of the script to perform specific tasks.\par
+In this article, we'll explore eight different types of JavaScript functions and how they can be used to write efficient and organized code.\par
+types :- declration function\par
+\tab expressions function\par
+\tab arrow function\par
+11) what is js in breif?\par
+ans :    JavaScript is a dynamic computer programming language. It is lightweight and most commonly used as a part of web pages, whose implementations allow client-side script to interact with the user and make dynamic pages. It is an interpreted programming language with object-oriented capabilities\par
+JavaScript was first known as LiveScript, but Netscape changed its name to JavaScript, possibly because of the excitement being generated by Java. JavaScript made its first appearance in Netscape 2.0 in 1995 with the name LiveScript. The general-purpose core of the language has been embedded in Netscape, Internet Explorer, and other web browsers.\par
+\par
+The ECMA-262 Specification defined a standard version of the core JavaScript language.\par
+\par
+JavaScript is a lightweight, interpreted programming language.\par
+Designed for creating network-centric applications.\par
+Complementary to and integrated with Java.\par
+Complementary to and integrated with HTML.\par
+Open and cross-platform\par
+Client-Side JavaScript\par
+->   Client-Side JavaScript\par
+Client-side JavaScript is the most common form of the language. The script should be included in or referenced by an HTML document for the code to be interpreted by the browser.\par
+It means that a web page need not be a static HTML, but can include programs that interact with the user, control the browser, and dynamically create HTML content.\par
+The JavaScript client-side mechanism provides many advantages over traditional CGI server-side scripts. For example, you might use JavaScript to check if the user has entered a valid e-mail address in a form field.\par
+The JavaScript code is executed when the user submits the form, and only if all the entries are valid, they would be submitted to the Web Server.\par
+JavaScript can be used to trap user-initiated events such as button clicks, link navigation, and other actions that the user initiates explicitly or implicitly.\par
+Advantages of JavaScript\par
+The merits of using JavaScript are \f1\u8722?\f0\par
+Less server interaction \f1\u8722?\f0  You can validate user input before sending the page off to the server. This saves server traffic, which means less load on your server.\par
+Immediate feedback to the visitors \f1\u8722?\f0  They don't have to wait for a page reload to see if they have forgotten to enter something.\par
+Increased interactivity \f1\u8722?\f0  You can create interfaces that react when the user hovers over them with a mouse or activates them via the keyboard.\par
+Richer interfaces \f1\u8722?\f0  You can use JavaScript to include such items as drag-and-drop components and sliders to give a Rich Interface to your site visitors.\par
+Limitations of JavaScript\par
+We cannot treat JavaScript as a full-fledged programming language. It lacks the following important features \f1\u8722?\f0\par
+Client-side JavaScript does not allow the reading or writing of files. This has been kept for security reason.\par
+JavaScript cannot be used for networking applications because there is no such support available.\par
+JavaScript doesn't have any multi-threading or multiprocessor capabilities.\par
+Once again, JavaScript is a lightweight, interpreted programming language that allows you to build interactivity into otherwise static HTML pages.\par
+12) dynamic object\par
+ans: In\f2  \f0 JavaScript\f2 , \f0 you\f2  \f0 can\f2  \f0 choose\f2  \f0 dynamic\f2  \f0 values\f2  \f0 or\f2  \f0 variable\f2  \f0 names\f2  \f0 and\f2  \f0 object\f2  \f0 names\f2  \f0 and\f2  \f0 choose\f2  \f0 to\f2  \f0 edit\f2  \f0 the\f2  \f0 variable\f2  \f0 name\f2  \f0 in\f2  \f0 the\f2  \f0 future\f2  \f0 without\f2  \f0 accessing\f2  \f0 the\f2  \f0 array\f2 , \f0 Dynamic\f2  \f0 values\f2  \f0 and\f2  \f0 objects\f2  \f0 in\f2  \f0 JavaScript\f2  \f0 allow\f2  \f0 changing\f2 , \f0 accessing\f2 , \f0 or\f2  \f0 creating\f2  \f0 values\f2  \f0 and\f2  \f0 object\f2  \f0 properties\f2  \f0 at\f2  \f0 runtime\f2  \f0 for\f2  \f0 flexibility\f2  \f0 and\f2  \f0 adaptability\f2 .\f0\par
+There\f2  \f0 are\f2  \f0 several\f2  \f0 methods\f2  \f0 that\f2  \f0 can\f2  \f0 be\f2  \f0 used\f2  \f0 to\f2  \f0 create\f2  \f0 dynamic\f2  \f0 values\f2  \f0 and\f2  \f0 objects\f2  \f0 in\f2  \f0 JavaScript\f2 .\f0\par
+Using\f2  \f0 object\f2  \f0 literals\f2  \f0 with\f2  \f0 computed\f2  \f0 property\f2  \f0 names\par
+Using\f2  \f0 the\f2  \f0 bracket\f2  \f0 notation\f2  \f0 for\f2  \f0 object\f2  \f0 property\f2  \f0 assignment\par
+Using\f2  \f0 the\f2  \f0 spread\f2  \f0 operator\par
+Approach\f2  \f0 1\f2 : \f0 Using\f2  \f0 object\f2  \f0 literals\f2  \f0 with\f2  \f0 computed\f2  \f0 property\f2  \f0 names\par
+In\f2  \f0 this\f2  \f0 approach\f2  \f0 we\f2  \f0 are\f2  \f0 using\f2  \f0 object\f2  \f0 literals\f2  \f0 with\f2  \f0 computed\f2  \f0 property\f2  \f0 names\f2  \f0 that\f2  \f0 allow\f2  \f0 you\f2  \f0 to\f2  \f0 dynamically\f2  \f0 create\f2  \f0 or\f2  \f0 modify\f2  \f0 object\f2  \f0 properties\f2  \f0 based\f2  \f0 on\f2  \f0 variables\f2  \f0 or\f2  \f0 expressions\f2  \f0 within\f2  \f0 square\f2  \f0 brackets\f2  [].\f0\par
+Syntax\f2 :\f0\par
+const\f2  \f0 dynamicObject\f2  = \{\f0\par
+\f2   [\f0 dynamicKey\f2 ]: \f0 dynamicValue\f2 ,\f0\par
+\f2\};\f0\par
+Example\f2 : \f0 In\f2  \f0 this\f2  \f0 example\f2 , \f0 we\f2  \f0 are\f2  \f0 using\f2  \f0 the\f2  \f0 above\f2 -\f0 explained\f2  \f0 approach\f2 .\f0\par
+const\f2  \f0 dynamicKey1\f2  = \f0 'age'\f2 ;\f0\par
+const\f2  \f0 dynamicValue1\f2  = \f0 25\f2 ;\f0\par
+const\f2  \f0 dynamicKey2\f2  = \f0 'city'\f2 ;\f0\par
+const\f2  \f0 dynamicValue2\f2  = \f0 'Noida'\f2 ;\f0\par
+const\f2  \f0 dynamicObject\f2  = \{\f0\par
+\f2     \f0 name\f2 : \f0 'Aman'\f2 ,\f0\par
+\f2     [\f0 dynamicKey1\f2 ]: \f0 dynamicValue1\f2 ,\f0\par
+\f2     [\f0 dynamicKey2\f2 ]: \f0 dynamicValue2\f2 ,\f0\par
+\f2\};\f0\par
+console\f2 .\f0 log\f2 (\f0 dynamicObject\f2 );\f0\par
+Output\par
+\f2\{ \f0 name\f2 : \f0 'Aman'\f2 , \f0 age\f2 : \f0 25\f2 , \f0 city\f2 : \f0 'Noida'\f2  \}\par
+13) what is difference between scripting and programming language?\par
+ans :  Programming Language\tab Scripting Language\par
+A programming language is a computer language that is used to communicate with computers using a set of instructions.\tab A scripting language is a type of programming language designed for a runtime system to automate the execution of tasks.\par
+It is compiled language or compiler-based language.\tab It is interpreted language or interpreter-based language\par
+It is used to develop an application or software from scratch.\tab It is used to combine existing components and automate a specific task.\par
+It runs or executes independently and does not depend on the parent (exterior) program.\tab It runs or executes inside another program.\par
+It uses a compiler to convert source code into machine code.\tab It uses an interpreter to convert source code into machine code.\par
+As it uses a compiler, hence the complete program is converted into machine code in one shot.\tab As it uses an interpreter, hence the program is converted into machine code line by line.\par
+These languages are required to be compiled.\tab There is no need for compilation.\par
+It is comparatively difficult to write code in a programming language, and it requires numerous lines of code for each task.\tab It is comparatively easy to write code in the scripting language, and it requires few lines of code for each task.\par
+The development time in programming languages is high as more lines are required.\tab The development time in a scripting language as a smaller number of lines are required.\par
+There is the high maintenance cost.\tab There is less maintenance cost.\par
+All programming languages are not scripting languages\tab All scripting languages are programming languages\par
+It generates a .exe file.\tab It does not create a .exe file.\par
+Usually, programming languages do not support or provide very little support for user interface designing, data types, and graphic designing.\tab Scripting languages provide great support to user interface design, data types, and graphic design.\par
+Some popular examples are C, C++, Java, Scala, COBOL, etc.\tab Some popular examples are Perl, Python, JavaScript, etc.\par
+\f0 14) create a example with loop.\par
+ans :  i\f2  \f0 is\f2  \f0 initialized\f2  \f0 to\f2  \f0 1\f2 .\f0\par
+The\f2  \f0 test\f2  \f0 expression\f2  \f0 i\f2  < \f0 11\f2  \f0 is\f2  \f0 evaluated\f2 . ...\f0\par
+The\f2  \f0 update\f2  \f0 statement\f2  ++\f0 i\f2  \f0 is\f2  \f0 executed\f2 . ...\f0\par
+Again\f2 , \f0 the\f2  \f0 update\f2  \f0 statement\f2  ++\f0 i\f2  \f0 is\f2  \f0 executed\f2  \f0 and\f2  \f0 the\f2  \f0 test\f2  \f0 expression\f2  \f0 i\f2  < \f0 11\f2  \f0 is\f2  \f0 evaluated\f2 . ...\f0\par
+When\f2  \f0 i\f2  \f0 becomes\f2  \f0 11\f2 , \f0 i\f2  < \f0 11\f2  \f0 will\f2  \f0 be\f2  \f0 false\f2 , \f0 and\f2  \f0 the\f2  \f0 for\f2  \f0 loop\f2  \f0 terminates\f2 .\f0\par
+15) what are the type of error in js?\par
+ans : There\f2  \f0 are\f2  \f0 7\f2  \f0 types\f2  \f0 of\f2  \f0 JavaScript\f2  \f0 errors\f2 : \f0 Syntax\f2  \f0 error\f2 , \f0 Reference\f2  \f0 Error\f2 , \f0 Type\f2  \f0 Error\f2 , \f0 Evaluation\f2  \f0 Error\f2 , \f0 RangeError\f2 , \f0 URI\f2  \f0 Error\f2  \f0 and\f2  \f0 Internal\f2  \f0 Error\f2 .\f0\par
+16) what is lexican environment?\par
+ans : A\f2  \f0 lexical\f2  \f0 environment\f2  \f0 is\f2  \f0 a\f2  \f0 data\f2  \f0 structure\f2  \f0 that\f2  \f0 holds\f2  \f0 identifier\f2 -\f0 variable\f2  \f0 mapping\f2 . (\f0 here\f2  \f0 identifier\f2  \f0 refers\f2  \f0 to\f2  \f0 the\f2  \f0 name\f2  \f0 of\f2  \f0 variables\f2 /\f0 functions\f2 , \f0 and\f2  \f0 the\f2  \f0 variable\f2  \f0 is\f2  \f0 the\f2  \f0 reference\f2  \f0 to\f2  \f0 actual\f2  \f0 object\f2  [\f0 including\f2  \f0 function\f2  \f0 object\f2  \f0 or\f2  \f0 primitive\f2  \f0 value\f2 ]. \f0 Lexical\f2  \f0 in\f2  \f0 general\f2  \f0 means\f2  \f0 in\f2  \f0 hierarchy\f2  \f0 or\f2  \f0 i\lang1033 sequence\f2 .\f0\par
+17) what is DOM? example and breif.\par
+ans :  DOM\f2  \f0 stands\f2  \f0 for\f2  \f0 Document\f2  \f0 Object\f2  \f0 Model\f2 . \f0 It\f2  \f0 is\f2  \f0 a\f2  \f0 programming\f2  \f0 interface\f2  \f0 that\f2  \f0 allows\f2  \f0 us\f2  \f0 to\f2  \f0 create\f2 , \f0 change\f2 , \f0 or\f2  \f0 remove\f2  \f0 elements\f2  \f0 from\f2  \f0 the\f2  \f0 document\f2 . \f0 We\f2  \f0 can\f2  \f0 also\f2  \f0 add\f2  \f0 events\f2  \f0 to\f2  \f0 these\f2  \f0 elements\f2  \f0 to\f2  \f0 make\f2  \f0 our\f2  \f0 page\f2  \f0 more\f2  \f0 dynamic\f2 . \f0 The\f2  \f0 DOM\f2  \f0 views\f2  \f0 an\f2  \f0 HTML\f2  \f0 document\f2  \f0 as\f2  \f0 a\f2  \f0 tree\f2  \f0 of\f2  \f0 nodes\f2 .\f0\par
+18) what is client side and server side scripting language?\par
+ans :  Client\f2 -\f0 side\f2  \f0 scripting\tab Server\f2 -\f0 side\f2  \f0 scripting\par
+HTML\f2 , \f0 CSS\f2 , \f0 and\f2  \f0 javascript\f2  \f0 are\f2  \f0 used\f2 .\f0\tab PHP\f2 , \f0 Python\f2 , \f0 Java\f2 , \f0 Ruby\f2  \f0 are\f2  \f0 used\f2 .\f0\par
+No\f2  \f0 need\f2  \f0 of\f2  \f0 interaction\f2  \f0 with\f2  \f0 the\f2  \f0 server\f2 .\f0\tab It\f2  \f0 is\f2  \f0 all\f2  \f0 about\f2  \f0 interacting\f2  \f0 with\f2  \f0 the\f2  \f0 servers\f2 .\par
+19) what is global variable?\par
+ans : A global variable is a variable that is declared outside any function and is accessible to all routines in our program. So, its scope is global: it's initialized when we run our software and lasts while the program is running. We mostly declare global variables at the top of a module file.\par
+20) adding CSS in JS with example\par
+ans : document. getElementById('target'). ...\par
+var style = document. createElement('style'); style. ...\par
+var style = document. createElement('style'); document. ...\par
+// Create our shared stylesheet: const sheet = new CSSStyleSheet(); sheet.\f0\lang9\par
+\par
+\par
+}
+ 
